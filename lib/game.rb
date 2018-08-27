@@ -48,7 +48,7 @@ class Game
   end
   
   def turn
-    input current_player.move(board)
-    
+    input = current_player.move(board)
+    if board.taken?(input) 
   end
 end       
